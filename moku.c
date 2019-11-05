@@ -1,9 +1,9 @@
 #include <Python.h>
 #include <stdio.h>
 
-long nc(long long a,long long b)
+static long nc(long long a,long long b)
 {
-	return a-b+30;
+	return a*b*c;
 }
 static PyObject *foo_bar(PyObject *self, PyObject *args)
 {
@@ -11,10 +11,9 @@ if (!PyArg_ParseTuple(args, ""))
 return NULL;
 
 long long a = 100234234;  long long b = 22342342;  long long c = 341342;
-nc=nc(a,b)
 
 
-return Py_BuildValue("L", nc);
+return Py_BuildValue("L", nc(a,b,c));
 }
 
 
