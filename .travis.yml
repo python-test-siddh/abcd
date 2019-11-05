@@ -13,7 +13,6 @@ script:
 - python setup.py build
 - python setup.py install
 - pip list
-- python gampa.py
 
 
 
