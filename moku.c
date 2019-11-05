@@ -1,7 +1,7 @@
 #include <Python.h>
 #include <stdio.h>
 
-static long nc(long long a,long long b)
+static long nc(long long a,long long b,long long c)
 {
 	return a*b*c;
 }
